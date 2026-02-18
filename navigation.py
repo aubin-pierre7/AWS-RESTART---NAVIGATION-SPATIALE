@@ -35,7 +35,7 @@ def poids_sur_corps(masse, gravite):
 
     return masse * gravite
 
-#
+# Ajout des tests
 if __name__ == "__main__":
 
     corps = charger_corps_celestes()
