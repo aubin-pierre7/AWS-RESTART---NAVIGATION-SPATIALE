@@ -2,14 +2,14 @@ import os
 
 dossier = "mission_data"
 
-# Verification de l'existence
+#Verification de l'existence
 if not os.path.exists(dossier):
     print(" Le dossier mission_data n'existe pas")
     exit()
 
 print("mission_data/")
 
-# Lister fichiers
+#Lister fichiers
 for element in os.listdir(dossier):
 
     chemin = os.path.join(dossier, element)
@@ -18,7 +18,7 @@ for element in os.listdir(dossier):
         taille = os.path.getsize(chemin) / 1024
         print(f"    {element} ({taille:.1f} Ko)")
 
-# Creer des sous dossiers
+#Creer des sous dossiers
 rapports = os.path.join(dossier, "rapports")
 archives = os.path.join(dossier, "archives")
 
