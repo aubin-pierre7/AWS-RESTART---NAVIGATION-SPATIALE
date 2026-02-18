@@ -25,7 +25,7 @@ for mission in missions:  #boucle sur chaque mission
 
     budget_total += budget  #budget total
 
-    if duree > plus_longue["duree_jours"]:  # comparaison de la duree
+    if duree > plus_longue["duree_jours"]:  #comparaison de la duree
         plus_longue = mission  
 
     if duree < plus_courte["duree_jours"]:
